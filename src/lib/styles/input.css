@@ -1,0 +1,23 @@
+@layer components {
+  .input {
+    @apply border border-neutral-base outline-neutral-base text-default-text h-12 px-4 select-none;
+    border-radius: var(--theme-border-radius);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .input-reversed {
+    @apply bg-default-focus border-none;
+  }
+
+  .input-reversed::placeholder {
+    @apply text-default-text;
+  }
+
+  .input-reversed:focus {
+    @apply bg-transparent outline-neutral-base;
+  }
+
+  .input-compact {
+    @apply h-10 px-3;
+  }
+}

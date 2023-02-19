@@ -1,0 +1,149 @@
+@layer components {
+  .btn {
+    @apply relative inline-flex items-center justify-center;
+    @apply h-10 px-3 sm:h-12 sm:px-4;
+    @apply bg-secondary-base text-secondary-text border-secondary-focus;
+    @apply uppercase font-semibold text-sm;
+    @apply cursor-pointer select-none;
+    border-width: var(--theme-border-width);
+    border-radius: var(--theme-border-radius);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .btn-square {
+    @apply h-10 w-10 sm:h-12 sm:w-12 p-0;
+  }
+
+  .btn-compact {
+    @apply h-6 sm:h-8 px-1 sm:px-2;
+  }
+
+  .btn-loading::before {
+    @apply w-4 h-4 mr-2 border-2 rounded-full border-l-transparent border-t-transparent animate-spin;
+    content: "";
+  }
+
+  .btn-square.btn-loading::before {
+    @apply mr-0;
+  }
+
+  .btn-link {
+    @apply bg-transparent underline;
+  }
+
+  .btn-primary {
+    @apply bg-primary-base text-primary-text border-primary-base;
+  }
+
+  .btn-primary:hover {
+    @apply bg-primary-focus border-primary-focus;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary-base text-secondary-text border-secondary-base;
+  }
+
+  .btn-secondary:hover {
+    @apply bg-secondary-focus border-secondary-focus;
+  }
+
+  .btn-neutral {
+    @apply bg-neutral-base text-neutral-text border-neutral-base;
+  }
+
+  .btn-neutral:hover {
+    @apply bg-neutral-focus border-neutral-focus;
+  }
+
+  .btn-ghost {
+    @apply bg-transparent border-transparent text-default-text;
+  }
+
+  .btn-ghost:active,
+  .btn-ghost:hover {
+    @apply bg-default-focus;
+  }
+
+  .btn-success {
+    @apply bg-success-base text-success-text border-success-base;
+  }
+
+  .btn-success:hover {
+    @apply bg-success-focus border-success-focus;
+  }
+
+  .btn-warning {
+    @apply bg-warning-base text-warning-text border-warning-base;
+  }
+
+  .btn-warning:hover {
+    @apply bg-warning-focus border-warning-focus;
+  }
+
+  .btn-error {
+    @apply bg-error-base text-error-text border-error-base;
+  }
+
+  .btn-error:hover {
+    @apply bg-error-focus border-error-focus;
+  }
+
+
+  .btn-outline {
+    @apply bg-transparent;
+  }
+
+  .btn-outline.btn-primary {
+    @apply text-primary-base border-primary-base;
+  }
+
+  .btn-outline.btn-primary:active,
+  .btn-outline.btn-primary:hover {
+    @apply bg-primary-base text-primary-text;
+  }
+
+  .btn-outline.btn-secondary {
+    @apply text-secondary-base border-secondary-base;
+  }
+
+  .btn-outline.btn-secondary:active,
+  .btn-outline.btn-secondary:hover {
+    @apply bg-secondary-base text-secondary-text;
+  }
+
+  .btn-outline.btn-neutral {
+    @apply text-neutral-base border-neutral-base;
+  }
+
+  .btn-outline.btn-neutral:active,
+  .btn-outline.btn-neutral:hover {
+    @apply bg-neutral-base text-neutral-text;
+  }
+
+  .btn-outline.btn-success {
+    @apply text-success-base border-success-base;
+  }
+
+  .btn-outline.btn-success:active,
+  .btn-outline.btn-success:hover {
+    @apply bg-success-base text-success-text;
+  }
+
+  .btn-outline.btn-warning {
+    @apply text-warning-base border-warning-base;
+  }
+
+  .btn-outline.btn-warning:active,
+  .btn-outline.btn-warning:hover {
+    @apply bg-warning-base text-warning-text;
+  }
+
+  .btn-outline.btn-error {
+    @apply text-error-base border-error-base;
+  }
+
+  .btn-outline.btn-error:active,
+  .btn-outline.btn-error:hover {
+    @apply bg-error-base text-error-text;
+  }
+}

@@ -1,0 +1,124 @@
+@layer components {
+  .drawer {
+    @apply grid w-full h-full overflow-hidden bg-default-base;
+  }
+
+  .drawer-toggler {
+    @apply hidden;
+  }
+
+  .drawer-toggler ~ .drawer-main,
+  .drawer-toggler ~ .drawer-side {
+    @apply row-start-1 col-start-1 overflow-x-hidden;
+  }
+
+  .drawer-toggler ~ .drawer-main {
+    @apply scroll-smooth overflow-y-auto z-0;
+    @apply transition-all duration-300;
+  }
+
+  .drawer-toggler ~ .drawer-side {
+    @apply grid max-h-screen border-r border-default-focus sm:overflow-y-auto;
+  }
+
+  .drawer-toggler ~ .drawer-side > .drawer-overlay {
+    @apply bg-default-focus opacity-0 invisible cursor-pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .drawer-toggler ~ .drawer-side > .drawer-overlay +* {
+    @apply bg-default-base;
+  }
+
+  .drawer-toggler ~ .drawer-side > .drawer-overlay,
+  .drawer-toggler ~ .drawer-side > .drawer-overlay +* {
+    @apply row-start-1 col-start-1 transition-all duration-300 ease-in-out;
+  }
+
+  .drawer-toggler:checked ~ .drawer-side {
+    @apply overflow-y-auto;
+  }
+
+  .drawer-toggler:checked ~ .drawer-side > .drawer-overlay {
+    @apply visible opacity-40;
+  }
+
+  .drawer-toggler:checked ~ .drawer-main {
+    @apply scale-95;
+  }
+
+
+  /* left */
+
+  .drawer-l > .drawer-toggler ~ .drawer-side > .drawer-overlay +* {
+    @apply -translate-x-full;
+  }
+
+  .drawer-l > .drawer-toggler:checked ~ .drawer-side > .drawer-overlay +* {
+    @apply translate-x-0;
+  }
+
+  /* right */
+
+  .drawer-r > .drawer-toggler ~ .drawer-side > .drawer-overlay +* {
+    @apply justify-self-end translate-x-full;
+  }
+
+  .drawer-r > .drawer-toggler:checked ~ .drawer-side > .drawer-overlay +* {
+    @apply translate-x-0;
+  }
+
+
+  /* top */
+
+  .drawer-t > .drawer-toggler ~ .drawer-side > .drawer-overlay +* {
+    @apply -translate-y-full;
+  }
+
+  .drawer-t > .drawer-toggler:checked ~ .drawer-side > .drawer-overlay +* {
+    @apply translate-y-0;
+  }
+
+  /* bottom */
+
+  .drawer-b > .drawer-toggler ~ .drawer-side {
+    @apply grid-rows-1 overflow-y-hidden;
+  }
+
+  .drawer-b > .drawer-toggler ~ .drawer-side > .drawer-overlay +* {
+    @apply row-start-2 translate-y-full;
+  }
+
+  .drawer-b > .drawer-toggler:checked ~ .drawer-side > .drawer-overlay +* {
+    @apply -translate-y-0;
+  }
+
+  /* auto */
+
+  @media (min-width: 640px) {
+    .drawer-l.drawer-fit {
+      grid-auto-columns: max-content auto;
+    }
+
+    .drawer-r.drawer-fit {
+      grid-auto-columns: auto max-content;
+    }
+
+    .drawer-l.drawer-fit > .drawer-toggler ~ .drawer-main,
+    .drawer-r.drawer-fit > .drawer-toggler ~ .drawer-side {
+      @apply col-start-2;
+    }
+
+    .drawer-t.drawer-fit > .drawer-toggler:checked ~ .drawer-main,
+    .drawer-b.drawer-fit > .drawer-toggler:checked ~ .drawer-main,
+    .drawer-l.drawer-fit > .drawer-toggler:checked ~ .drawer-main,
+    .drawer-r.drawer-fit > .drawer-toggler:checked ~ .drawer-main {
+      @apply scale-100;
+    }
+
+    .drawer-l.drawer-fit > .drawer-toggler ~ .drawer-side > .drawer-overlay +*,
+    .drawer-r.drawer-fit > .drawer-toggler ~ .drawer-side > .drawer-overlay +* {
+      @apply translate-x-0;
+    }
+  }
+}

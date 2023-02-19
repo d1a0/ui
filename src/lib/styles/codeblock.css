@@ -1,0 +1,113 @@
+/*
+  Classes below are taken from 
+  https://github.com/highlightjs/highlight.js
+  the default and only code highlighting tool XOOUI uses.
+*/
+
+@layer components {
+  .codeblock .hljs {
+    color: hsl(var(--color-default-text));
+    background: hsl(var(--color-default-base));
+  }
+
+  .codeblock .hljs-doctag,
+  .codeblock .hljs-keyword,
+  .codeblock .hljs-meta .hljs-keyword,
+  .codeblock .hljs-template-tag,
+  .codeblock .hljs-template-variable,
+  .codeblock .hljs-type,
+  .codeblock .hljs-variable.language_ {
+    /* prettylights-syntax-keyword */
+    color: var(--color-code-keyword);
+  }
+
+  .codeblock .hljs-title,
+  .codeblock .hljs-title.class_,
+  .codeblock .hljs-title.class_.inherited__,
+  .codeblock .hljs-title.function_ {
+    /* prettylights-syntax-entity */
+    color: var(--color-code-entity);
+  }
+
+  .codeblock .hljs-attr,
+  .codeblock .hljs-attribute,
+  .codeblock .hljs-literal,
+  .codeblock .hljs-meta,
+  .codeblock .hljs-number,
+  .codeblock .hljs-operator,
+  .codeblock .hljs-variable,
+  .codeblock .hljs-selector-attr,
+  .codeblock .hljs-selector-class,
+  .codeblock .hljs-selector-id {
+    /* prettylights-syntax-constant */
+    color: var(--color-code-constant);
+  }
+
+  .codeblock .hljs-regexp,
+  .codeblock .hljs-string,
+  .codeblock .hljs-meta .hljs-string {
+    /* prettylights-syntax-string */
+    color: var(--color-code-string);
+  }
+
+  .codeblock .hljs-built_in,
+  .codeblock .hljs-symbol {
+    /* prettylights-syntax-variable */
+    color: var(--color-code-variable);
+  }
+
+  .codeblock .hljs-comment,
+  .codeblock .hljs-code,
+  .codeblock .hljs-formula {
+    /* prettylights-syntax-comment */
+    color: var(--color-code-comment);
+  }
+
+  .codeblock .hljs-name,
+  .codeblock .hljs-quote,
+  .codeblock .hljs-selector-tag,
+  .codeblock .hljs-selector-pseudo {
+    /* prettylights-syntax-entity-tag */
+    color: var(--color-code-entity-tag);
+  }
+
+  .codeblock .hljs-subst {
+    /* prettylights-syntax-storage-modifier-import */
+    color: var(--color-code-storage-modifier-import);
+  }
+
+  .codeblock .hljs-section {
+    /* prettylights-syntax-markup-heading */
+    color: var(--color-code-markup-heading);
+    font-weight: bold;
+  }
+
+  .codeblock .hljs-bullet {
+    /* prettylights-syntax-markup-list */
+    color: var(--color-code-markup-list);
+  }
+
+  .codeblock .hljs-emphasis {
+    /* prettylights-syntax-markup-italic */
+    color: var(--color-code-markup-italic);
+    font-style: italic;
+  }
+
+  .codeblock .hljs-strong {
+    /* prettylights-syntax-markup-bold */
+    color: var(--color-code-markup-bold);
+    font-weight: bold;
+  }
+
+  .codeblock .hljs-addition {
+    /* prettylights-syntax-markup-inserted */
+    color: var(--color-code-markup-inserted);
+    background-color: var(--color-code-markup-inserted-bg);
+  }
+
+  .codeblock .hljs-deletion {
+    /* prettylights-syntax-markup-deleted */
+    color: var(--color-code-markup-deleted);
+    background-color: var(--color-code-markup-deleted-bg);
+  }
+}

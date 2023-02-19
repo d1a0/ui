@@ -1,0 +1,42 @@
+@layer components {
+  .card {
+    @apply relative bg-default-base text-default-text;
+    border-radius: var(--theme-border-radius);
+  }
+
+  .card-center {
+    @apply flex items-center justify-center;
+  }
+
+  .card-circle {
+    @apply rounded-full;
+  }
+
+  .card-border {
+    @apply border border-default-focus;
+  }
+
+  .card-primary {
+    @apply bg-primary-base text-primary-text;
+  }
+
+  .card-secondary {
+    @apply bg-secondary-base text-secondary-text;
+  }
+
+  .card-neutral {
+    @apply bg-neutral-base text-neutral-text;
+  }
+
+  .card-success {
+    @apply bg-success-base text-success-text;
+  }
+
+  .card-warning {
+    @apply bg-warning-base text-warning-text;
+  }
+
+  .card-error {
+    @apply bg-error-base text-error-text;
+  }
+}

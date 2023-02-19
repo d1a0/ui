@@ -1,0 +1,22 @@
+@layer components {
+  .navbar {
+    @apply flex items-center p-2;
+    @apply bg-default-base text-default-text border-default-focus;
+  }
+
+  .navbar-primary {
+    @apply bg-primary-base text-primary-text border-primary-focus;
+  }
+
+  .navbar-left {
+    @apply w-1/2 flex items-center justify-start;
+  }
+
+  .navbar-right {
+    @apply w-1/2 flex justify-end;
+  }
+
+  .navbar-center {
+    @apply shrink-0;
+  }
+}

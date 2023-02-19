@@ -1,0 +1,48 @@
+@layer components {
+  .switch {
+    @apply relative appearance-none cursor-pointer bg-neutral-base h-8 w-14 rounded-full;
+    @apply transition-colors duration-300;
+  }
+
+  .switch:checked {
+    @apply bg-primary-base;
+  }
+
+  .switch-primary:checked {
+    @apply bg-primary-base;
+  }
+
+  .switch-secondary:checked {
+    @apply bg-secondary-base;
+  }
+
+  .switch-success:checked {
+    @apply bg-success-base;
+  }
+
+  .switch-warning:checked {
+    @apply bg-warning-base;
+  }
+
+  .switch-error:checked {
+    @apply bg-error-base;
+  }
+
+  .switch::before {
+    @apply absolute top-1 left-1 bg-neutral-text h-6 w-6 rounded-full;
+    @apply transition-transform duration-300 ease-in-out;
+    content: "";
+  }
+
+  .switch:checked::before {
+    transform: translateX(1.5rem);
+  }
+
+  .switch-square {
+    border-radius: var(--theme-border-radius);
+  }
+
+  .switch-square::before {
+    border-radius: calc(var(--theme-border-radius) / 2);
+  }
+}

@@ -1,0 +1,5 @@
+@layer components {
+  .divider {
+    @apply my-2 border-default-focus;
+  }
+}

@@ -1,0 +1,32 @@
+[data-theme="slimegreen"] {
+  --theme-border-width:  1px;
+  --theme-border-radius: 4px;
+  
+  --color-primary-base:  145 50% 40%;
+  --color-primary-focus: 145 50% 30%;
+  --color-primary-text:  0 0% 100%;
+
+  --color-default-text: 215 27.9% 16.9%;
+	--color-default-base: 0 0% 100%;
+	--color-default-focus: 240 10% 90%;
+
+	--color-secondary-text:  0 0% 100%;
+	--color-secondary-base:  219 14.1% 27.8%;
+	--color-secondary-focus: 219 14.1% 22.8%;
+
+	--color-neutral-text:  0 0% 100%;
+	--color-neutral-base:  210 10% 75%;
+	--color-neutral-focus: 210 10% 70%;
+
+	--color-success-text:  0 0% 100%;
+	--color-success-base:  174 50.2% 50%;
+	--color-success-focus: 174 50.2% 45%;
+
+	--color-warning-text:  0 0% 100%;
+	--color-warning-base:  43 95.8% 50%;
+	--color-warning-focus: 43 95.8% 45%;
+
+	--color-error-text:  0 0% 100%;
+	--color-error-base:  0 50% 55%;
+	--color-error-focus: 0 50% 50%;
+}

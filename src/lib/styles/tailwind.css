@@ -1,0 +1,10 @@
+/*
+To ignore the warning 'Unknown at rule @tailwind':
+1. Installing the plugin named 'Tailwind CSS IntelliSense'
+2. Press ctrl(command)shift+p and search for 'change language mode'
+3. Type 'tailwindcss' and select it.
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -1,0 +1,62 @@
+@layer components {
+  .menu {
+    @apply p-2 bg-default-base text-default-text;
+  }
+
+  .menu li:not(:has(*)),
+  .menu li > *:not(ul) {
+    @apply p-2 sm:px-3 md:px-5 xl:py-3;
+  }
+
+  .menu li:not(:has(*)) {
+    @apply text-neutral-400 text-sm font-semibold uppercase;
+  }
+
+  .menu li > *:not(ul) {
+    @apply flex cursor-pointer;
+    border-radius: var(--theme-border-radius);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .menu li > :not(ul):hover {
+    @apply bg-default-focus;
+  }
+
+  .menu li [data-active = true],
+  .menu li [data-active = true]:hover {
+    @apply text-primary-text bg-primary-base;
+  }
+
+  .menu li > *:not(ul) i,
+  .menu li > *:not(ul) svg {
+    @apply mr-0 lg:mr-4;
+  }
+
+  .menu li > *:not(ul) i + span,
+  .menu li > *:not(ul) svg + span {
+    @apply hidden lg:inline-block;
+  }
+
+  .menu-drawer-fit {
+    @apply w-64 lg:w-64 sm:w-max;
+  }
+
+  .menu-drawer-fit li:not(:has(*)),
+  .menu-drawer-fit li > *:not(ul) {
+    @apply px-5 py-2 sm:px-3 lg:px-5 xl:py-3;
+  }
+
+  .menu-drawer-fit li > *:not(ul) i,
+  .menu-drawer-fit li > *:not(ul) svg {
+    @apply mr-2 sm:mr-0 lg:mr-4;
+  }
+
+  .menu-drawer-fit li > *:not(ul) i + span,
+  .menu-drawer-fit li > *:not(ul) svg + span {
+    @apply inline-block sm:hidden lg:inline-block;
+  }
+
+  .menu-compact li > *:not(ul) {
+    @apply md:px-4 md:py-1.5;
+  }
+}

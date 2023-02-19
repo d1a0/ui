@@ -1,0 +1,1 @@
+<input class="input input-compact input-reversed w-full" type="text" placeholder="Search here" />

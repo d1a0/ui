@@ -1,0 +1,15 @@
+@layer components {
+  .radio {
+    @apply hidden;
+  }
+
+  .radio-box + label {
+    @apply border-2 border-default-focus bg-default-base text-default-text;
+    @apply cursor-pointer;
+    border-radius: var(--theme-border-radius);
+  }
+
+  .radio-box:checked + label {
+    @apply border-primary-base;
+  }
+}

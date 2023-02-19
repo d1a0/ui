@@ -1,0 +1,44 @@
+/*
+  Colors below are taken from 
+  https://github.com/highlightjs/highlight.js
+  the default and only code highlighting tool XOOUI uses.
+*/
+
+
+:root {
+	--color-code-keyword: #d73a49;
+	--color-code-entity: #6f42c1;
+	--color-code-constant: #005cc5;
+	--color-code-string: #032f62;
+	--color-code-variable: #e36209;
+	--color-code-comment: #6a737d;
+	--color-code-entity-tag: #22863a;
+	--color-code-storage-modifier-import: #24292e;
+	--color-code-markup-heading: #005cc5;
+	--color-code-markup-list: #735c0f;
+	--color-code-markup-italic: #24292e;
+	--color-code-markup-bold: #24292e;
+	--color-code-markup-inserted: #22863a;
+	--color-code-markup-inserted-bg: #f0fff4;
+	--color-code-markup-deleted: #b31d28;
+	--color-code-markup-deleted-bg: #ffeef0;
+}
+
+[data-theme$="-dark"] {
+	--color-code-keyword: #ff7b72;
+	--color-code-entity: #d2a8ff;
+	--color-code-constant: #79c0ff;
+	--color-code-string: #a5d6ff;
+	--color-code-variable: #ffa657;
+	--color-code-comment: #8b949e;
+	--color-code-entity-tag: #7ee787;
+	--color-code-storage-modifier-import: #c9d1d9;
+	--color-code-markup-heading: #1f6feb;
+	--color-code-markup-list: #f2cc60;
+	--color-code-markup-italic: #c9d1d9;
+	--color-code-markup-bold: #c9d1d9;
+	--color-code-markup-inserted: #aff5b4;
+	--color-code-markup-inserted-bg: #033a16;
+	--color-code-markup-deleted: #ffdcd7;
+	--color-code-markup-deleted-bg: #67060c;
+}

@@ -1,0 +1,18 @@
+@layer components {
+  .alert {
+    @apply flex items-center gap-4 bg-primary-base text-primary-text p-4 w-full;
+    border-radius: var(--theme-border-radius);
+  }
+
+  .alert-success {
+    @apply bg-success-base;
+  }
+
+  .alert-warning {
+    @apply bg-warning-base;
+  }
+
+  .alert-error {
+    @apply bg-error-base;
+  }
+}

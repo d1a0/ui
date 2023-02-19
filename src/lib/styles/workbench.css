@@ -1,0 +1,13 @@
+@layer components {
+  .workbench {
+    @apply p-4 flex flex-wrap items-center justify-center gap-4;
+    @apply bg-default-focus bg-opacity-80;
+    border-radius: var(--theme-border-radius);
+    background-image:
+      linear-gradient(hsl(var(--color-default-base)) 1px, transparent 0),
+      linear-gradient(90deg, hsl(var(--color-default-base)) 1px, transparent 0),
+      linear-gradient(hsla(var(--color-default-base) / .3) 1px, transparent 0),
+      linear-gradient(90deg, hsla(var(--color-default-base) / .3) 1px, transparent 0);
+    background-size: 75px 75px, 75px 75px, 15px 15px, 15px 15px;
+  }
+}
