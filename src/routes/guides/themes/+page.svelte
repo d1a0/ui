@@ -32,6 +32,7 @@
 		<a class="mr-1 text-primary-base" href="#Theme-Generator">#</a>
 		Theme Generator
 	</h2>
+	<p class="mb-4">Coming soon ...</p>
 
 	<svelte:fragment slot="sidebar">
 		<div class="sticky top-20">

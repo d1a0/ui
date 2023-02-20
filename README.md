@@ -1,38 +1,33 @@
-# create-svelte
+# XOOUI
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+A web UI library using Svelte and Tailwind.
 
-## Creating a project
 
-If you're seeing this, you've probably already done this step. Congrats!
+[Svelte](https://svelte.dev) + [Tailwind](https://tailwindcss.com) are cool, they fit my vision of what webapp development looks like. XOOUI allows you to write less CSS classes than just using Tailwind and use CSS variables for theme customization.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Installation
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+npm i @xoolab/ui
 ```
 
-## Building
+## Configuration
 
-To create a production version of your app:
+Add the XOOUI plugin into `tailwind.config.cjs`.
 
-```bash
-npm run build
+```js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  plugins: [
+    require("@xoolab/ui/tailwind/index.cjs"),
+  ],
+}
 ```
 
-You can preview the production build with `npm run preview`.
+## Documentation
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Check out [xooui.pages.dev](https://xooui.pages.dev).
+
+## LICENSE
+
+XOOUI is MIT licensed.

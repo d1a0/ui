@@ -7,7 +7,7 @@
 			routes: [
 				{ name: 'Usage', status: 'warning' },
 				{ name: 'Themes', status: '' },
-				{ name: 'Typography', status: '' },
+				{ name: 'Typography', status: 'error' },
 			]
 		},
 		{
@@ -56,7 +56,7 @@
 		{#each groups as g}
 			<li>{g.group}</li>
 			{#each g.routes as r}
-				{@const name = r.name.toLowerCase()}
+				{@const name = r.name.toLowerCase().replace(" ", "-")}
 				{@const path = `/${g.group}/${name}`}
 				<li>
 					<a class="flex justify-between" href="/{g.group}/{name}" data-active={$page.url.pathname === path}>

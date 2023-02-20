@@ -66,7 +66,7 @@
 
 <Shell {settings}>
   <svelte:fragment slot="extra">
-    <p>Dropdown is implementated by tag <code class="text-sm">&lt;details/&gt;</code>.</p>
+    <p class="mb-8">Dropdown is implementated by tag <code class="text-sm">&lt;details/&gt;</code>.</p>
   </svelte:fragment>
 </Shell>
 

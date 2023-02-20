@@ -7,11 +7,17 @@
 		description: 'CodePreview is used for UI demonstration.',
 		examples: [
 			{
-				title: 'CodePreview',
+				title: 'Native code preview',
 				description: '',
 				code: `
-<CodePreview title="Button" description="This is a primary button.">
-  <button class="btn btn-primary" type="button">Button</button>
+<CodePreview title="Button" description="This is a primary button." code=\`<button class="btn btn-primary" type="button">Button</button>\` />`
+			},
+			{
+				title: 'Custom component preview',
+				description: '',
+				code: `
+<CodePreview title="Button" description="This is a primary button." code="<CustomComponent />">
+  <CustomComponent />
 </CodePreview>`
 			},
 		]
@@ -22,9 +28,16 @@
   {@const examples = settings.examples}
   <CodePreview title={examples[0].title} code={examples[0].code}>
     <div class="card p-4 w-full">
-      <CodePreview title="Button" description="This is a primary button." code={examples[0].code}>
+      <CodePreview title="Button" description="This is a primary button." code={`<button class="btn btn-primary" type="button">Button</button>`}>
         <button class="btn btn-primary" type="button">Button</button>
       </CodePreview>
+    </div>
+  </CodePreview>
+	<CodePreview title={examples[1].title} code={examples[1].code}>
+    <div class="card p-4 w-full">
+      <CodePreview title="Button" description="This is a primary button." code="<CustomComponent />">
+				<div>Custom Component</div>
+			</CodePreview>
     </div>
   </CodePreview>
 </Shell>

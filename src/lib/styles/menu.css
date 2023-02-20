@@ -64,4 +64,9 @@
   .menu-static li > *:not(ul) svg {
     @apply mr-4;
   }
+
+  .menu-static.menu-compact li > *:not(ul) i,
+  .menu-static.menu-compact li > *:not(ul) svg {
+    @apply mr-2
+  }
 }

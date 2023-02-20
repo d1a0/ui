@@ -7,6 +7,7 @@
 	import { browser } from '$app/environment';
 	import { highlighter } from '$lib/stores';
 	import { theme } from '$docs/stores';
+	import { page } from '$app/stores';
 	
 	// set code highlighter.
 	import hljs from 'highlight.js';

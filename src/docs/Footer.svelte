@@ -4,7 +4,7 @@
 </script>
 
 <div class="flex flex-wrap gap-4 py-8">
-  <nav class="menu menu-static menu-compact">
+  <nav class="menu menu-static">
     <ul>
       <li>Source Code</li>
       <li>
@@ -15,7 +15,7 @@
       </li>
     </ul>
   </nav>
-  <nav class="menu menu-static menu-compact">
+  <nav class="menu menu-static">
     <ul>
       <li>Community</li>
       <li>

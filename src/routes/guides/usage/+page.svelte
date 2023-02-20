@@ -12,7 +12,7 @@
     </h1>
 		<p class="mb-8">
 			XOOUI is still in the proof-of-code stage, you can join us at
-			<a class="underline" href="/">github.com/xoolab/ui</a>.
+			<a class="underline" href="//github.com/xoolab/ui">github.com/xoolab/ui</a>.
 		</p>
 	</svelte:fragment>
 
@@ -21,14 +21,9 @@
 		Installation
 	</h2>
 	<p class="mb-4">
-		XOOUI is not available yet but you can clone the code repository and then run the
-		documentation site if you are interested now.
+		Install XOOUI via <span class="badge badge-neutral">npm</span> or any other node package managers you like.
 	</p>
-	<CodeBlock
-		code={`git clone https://github.com/xoolab/ui.git
-npm run dev
-`}
-	/>
+	<CodeBlock code="npm i @xoolab/ui"/>
 
   <div class="py-4"></div>
 
@@ -45,7 +40,7 @@ npm run dev
 		code={`/** @type {import('tailwindcss').Config} */
 module.exports = {
   plugins: [
-    require("./src/lib/tailwind/index.cjs"),
+    require("@xoolab/ui/tailwind/index.cjs"),
   ],
 }
 `}
