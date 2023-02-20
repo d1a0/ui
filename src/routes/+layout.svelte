@@ -37,7 +37,7 @@
 	</svelte:fragment>
 	<svelte:fragment slot="app-head-right">
 		<a class="btn btn-ghost" href="/">RSS</a>
-		<a class="btn btn-ghost" href="/">GitHub</a>
+		<a class="btn btn-ghost" href="//github.com/xoolab/ui">GitHub</a>
 	</svelte:fragment>
 	<svelte:fragment slot="app-sidebar">
 		<SideBar />

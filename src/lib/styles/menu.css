@@ -5,7 +5,7 @@
 
   .menu li:not(:has(*)),
   .menu li > *:not(ul) {
-    @apply p-2 sm:px-3 md:px-5 xl:py-3;
+    @apply px-2 py-1 sm:px-3 md:py-2 md:px-5;
   }
 
   .menu li:not(:has(*)) {
@@ -43,7 +43,7 @@
 
   .menu-drawer-fit li:not(:has(*)),
   .menu-drawer-fit li > *:not(ul) {
-    @apply px-5 py-2 sm:px-3 lg:px-5 xl:py-3;
+    @apply px-5 py-1 sm:px-3 md:py-2 lg:px-5 xl:py-2;
   }
 
   .menu-drawer-fit li > *:not(ul) i,
@@ -57,7 +57,7 @@
   }
 
   .menu-compact li > *:not(ul) {
-    @apply md:px-4 md:py-1.5;
+    @apply md:px-4 md:py-1;
   }
 
   .menu-static li > *:not(ul) i,
