@@ -11,7 +11,7 @@
 		</div>
 	</div>
 	<div class="flex gap-4">
-		<a class="btn btn-primary" href="/">Get started</a>
+		<a class="btn btn-primary" href="/guides/usage">Get started</a>
 		<a class="btn btn-neutral" href="/styles/alert">Examples</a>
 	</div>
 </div>

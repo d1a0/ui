@@ -10,9 +10,9 @@
 				description: '',
 				code: `<nav class="menu">
   <ul>
-    <li><a href="/install">Install</a></li>
-    <li><a href="/themes">Themes</a></li>
-    <li><a href="/typography">Typography</a></li>
+    <li><a href="/guides/install">Install</a></li>
+    <li><a href="/guides/themes">Themes</a></li>
+    <li><a href="/guides/typography">Typography</a></li>
   </ul>
 </nav>`
 			},
@@ -22,9 +22,9 @@
 				code: `<nav class="menu">
   <ul>
     <li>Guildes</li>
-    <li><a href="/install">Install</a></li>
-    <li><a href="/themes">Themes</a></li>
-    <li><a href="/typography">Typography</a></li>
+    <li><a href="/guides/install">Install</a></li>
+    <li><a href="/guides/themes">Themes</a></li>
+    <li><a href="/guides/typography">Typography</a></li>
   </ul>
 </nav>`
 			},

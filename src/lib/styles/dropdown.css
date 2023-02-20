@@ -11,7 +11,7 @@
 
   .dropdown-main {
     @apply absolute z-50;
-    @apply border-default-focus bg-neutral-text overflow-hidden;
+    @apply border-default-focus bg-default-base overflow-hidden;
     border-width: var(--theme-border-width);
     border-radius: calc(var(--theme-border-radius) * 2);
   }

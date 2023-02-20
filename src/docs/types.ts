@@ -7,5 +7,6 @@ export interface ShellSettings {
     description: string;
     code: string;
     lang?: string;
+    preview?: boolean;
   }[];
 };

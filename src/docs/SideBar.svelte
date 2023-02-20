@@ -35,7 +35,19 @@
 				{ name: 'CodePreview', status: '' },
 				{ name: 'TableOfContents', status: '' },
 			]
-		}
+		},
+		{
+			group: "actions",
+			routes: [
+				{ name: "Clipboard", status: "" }
+			]
+		},
+		{
+			group: "utilities",
+			routes: [
+				{ name: "Storage", status: "updated" }
+			]
+		},
 	];
 </script>
 
