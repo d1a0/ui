@@ -2,6 +2,7 @@
 	import AppShell from '$lib/components/AppShell.svelte';
 	import SearchBar from '$docs/SearchBar.svelte';
 	import SideBar from '$docs/SideBar.svelte';
+	import Footer from '$docs/Footer.svelte';
 	import Icons from '$docs/Icons.svelte';
 	import { browser } from '$app/environment';
 	import { highlighter } from '$lib/stores';
@@ -45,6 +46,6 @@
 		<slot />
 	</svelte:fragment>
 	<svelte:fragment slot="app-foot">
-		<div class="py-8" />
+		<Footer />
 	</svelte:fragment>
 </AppShell>

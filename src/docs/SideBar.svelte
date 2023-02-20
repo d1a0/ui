@@ -42,7 +42,7 @@
 <nav class="menu menu-drawer-fit">
 	<ul>
 		{#each groups as g}
-			<li class="menu-title">{g.group}</li>
+			<li>{g.group}</li>
 			{#each g.routes as r}
 				{@const name = r.name.toLowerCase()}
 				{@const path = `/${g.group}/${name}`}

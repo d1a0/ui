@@ -22,10 +22,10 @@
 					<slot name="app-head-right" />
 				</div>
 			</header>
-			<section id="{id}-page" class="p-4 sm:p-6">
+			<section id="{id}-page" class="p-4 sm:p-6 min-h-[65%]">
 				<slot />
 			</section>
-			<footer>
+			<footer class="border-t border-default-focus">
 				<slot name="app-foot" />
 			</footer>
 		</div>

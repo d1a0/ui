@@ -1,6 +1,7 @@
 @layer components {
   .input {
-    @apply border border-neutral-base outline-neutral-base text-default-text h-12 px-4 select-none;
+    @apply border h-12 px-4 select-none;
+    @apply border-neutral-base outline-neutral-base text-default-text bg-transparent;
     border-radius: var(--theme-border-radius);
     -webkit-tap-highlight-color: transparent;
   }

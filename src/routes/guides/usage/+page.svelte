@@ -12,7 +12,7 @@
     </h1>
 		<p class="mb-8">
 			XOOUI is still in the proof-of-code stage, you can join us at
-			<a class="underline" href="/">github.com/xoodio/ui</a>.
+			<a class="underline" href="/">github.com/xoolab/ui</a>.
 		</p>
 	</svelte:fragment>
 
@@ -25,7 +25,7 @@
 		documentation site if you are interested now.
 	</p>
 	<CodeBlock
-		code={`git clone https://github.com/xoodio/ui.git
+		code={`git clone https://github.com/xoolab/ui.git
 npm run dev
 `}
 	/>

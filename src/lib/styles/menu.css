@@ -9,7 +9,7 @@
   }
 
   .menu li:not(:has(*)) {
-    @apply text-neutral-400 text-sm font-semibold uppercase;
+    @apply text-neutral-400 text-sm font-bold uppercase mt-2;
   }
 
   .menu li > *:not(ul) {
@@ -58,5 +58,10 @@
 
   .menu-compact li > *:not(ul) {
     @apply md:px-4 md:py-1.5;
+  }
+
+  .menu-static li > *:not(ul) i,
+  .menu-static li > *:not(ul) svg {
+    @apply mr-4;
   }
 }
