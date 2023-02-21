@@ -1,11 +1,21 @@
-# XOOUI
-
-A web UI library using Svelte and Tailwind.
+![logo](./static/logo.png)
 
 
-[Svelte](https://svelte.dev) + [Tailwind](https://tailwindcss.com) are cool, they fit my vision of what webapp development looks like. XOOUI allows you to write less CSS classes than just using Tailwind and use CSS variables for theme customization.
+![npm bundle size](https://img.shields.io/bundlephobia/min/@xoolab/ui?logo=npm)
+![GitHub issues](https://img.shields.io/github/issues/xoolab/ui)
+![license](https://img.shields.io/github/license/xoolab/ui)
+
+A web UI library for Svelte and Tailwind.
+
+
+[Svelte](https://svelte.dev) + [Tailwind](https://tailwindcss.com) are cool, they fit my vision of what webapp development looks like. XOOUI allows you to write less CSS classes than when just using Tailwind, and use CSS variables for theme customization.
+
+Note that XOOUI is now in the PoC phase, **DON'T** use it in production! 
+
 
 ## Installation
+
+Via `NPM`.
 
 ```bash
 npm i @xoolab/ui
@@ -26,8 +36,23 @@ module.exports = {
 
 ## Documentation
 
-Check out [xooui.pages.dev](https://xooui.pages.dev).
+Hosted websites for docs and examples (Built with Sveltekit + Tailwind + XOOUI):
 
-## LICENSE
+- [ui.13y.me](https://ui.13y.me).
+- [xooui.pages.dev](https://xooui.pages.dev)
 
-XOOUI is MIT licensed.
+## Feedbacks
+
+- [Discussions](https://github.com/xoolab/ui/discussions)
+- [Issues](https://github.com/xoolab/ui/issues)
+
+
+## Dive in XOOUI
+
+Clone the repository and run the docs site.
+
+```bash
+git clone https://github.com/xoolab/ui.git
+
+npm run dev
+```

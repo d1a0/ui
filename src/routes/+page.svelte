@@ -5,7 +5,7 @@
 	</div>
 	<div class="my-8">
 		<div class="text-lg font-bold text-center">
-			A web UI library using 
+			A web UI library for 
 			<a class="underline" href="//svelte.dev" target="_blank" rel="noreferrer">Svelte</a> and
 			<a class="underline" href="//tailwindcss.com" target="_blank" rel="noreferrer">Tailwind</a> ♡.
 		</div>
